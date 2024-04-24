@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuntamiento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="logo-menu">
+            <h2 class="logo">Ayuntamiento</h2>
+            <i class='bx bx-menu toggle-btn'></i>
+        </div>
+
+        <ul class="list">
+            <li class="list-item active">
+                <a href="#">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="link-name" style="--i:1;
+                    ">Inicio</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="municipio.html">
+                    <i class='bx bx-history'></i>
+                    <span class="link-name" style="--i:2;
+                    ">Historia</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="servicios.html">
+                    <i class='bx bxs-user-detail'></i>
+                    <span class="link-name" style="--i:3;
+                    ">Servicios</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="contacto.html">
+                    <i class='bx bx-message-dots'></i>
+                    <span class="link-name" style="--i:5;
+                    ">Contacto</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="ayuntamiento.html">
+                    <i class='bx bx-buildings'></i>
+                    <span class="link-name" style="--i:6;
+                    ">Ayuntamiento</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="horario.html">
+                    <i class='bx bx-timer'></i>
+                    <span class="link-name" style="--i:8;
+                    ">Horario</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    
+    <script src="script.js"></script>
+
+    <div class="texto">
+        <font size="7" class="Bienvenido">Bienvenido a nuestra pagina</font> <img src="img/Escudo_ayuntamiento.png" alt="" srcset="" class="img1">
+        <font size="3" class="lia">Ayuntamiento Municipal</font>
+        <font size="7" class="Jarabacoa">Jarabacoa</font>
+    </div>
+    
+    <!--image slider start-->
+<div class="galeria">
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="jarabacoa.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/imagen1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/imagen2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/imagen3.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+</div>
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+      <div>
+        <img src="img/republica.png" class="imagen_bajo">
+      </div>
+    
+    
+</body>
+
+</html>
